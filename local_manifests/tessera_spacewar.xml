@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="themuppets" fetch="https://github.com/TheMuppets" />
+  <remote name="tessera" fetch="https://github.com/BruxinCore" />
+
+  <project path="device/nothing/Spacewar" name="LineageOS/android_device_nothing_Spacewar" remote="github" revision="lineage-23.2" />
+  <project path="vendor/nothing/Spacewar" name="proprietary_vendor_nothing_Spacewar" remote="themuppets" revision="lineage-23.2" />
+  <project path="kernel/nothing/sm7325" name="LineageOS/android_kernel_nothing_sm7325" remote="github" revision="lineage-23.2" />
+  <project path="hardware/nothing" name="LineageOS/android_hardware_nothing" remote="github" revision="lineage-23.2" />
+
+  <project path="vendor/tessera" name="TesseraOS_vendor_tessera" remote="tessera" revision="t-16" />
+  <project path="packages/apps/TesseraHome" name="TesseraOS_packages_apps_TesseraHome" remote="tessera" revision="t-16" />
+</manifest>
