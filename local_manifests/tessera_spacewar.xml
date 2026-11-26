@@ -3,7 +3,21 @@
   <remote name="themuppets" fetch="https://github.com/TheMuppets" />
   <remote name="tessera" fetch="https://github.com/BruxinCore" />
 
-  <project path="device/nothing/Spacewar" name="LineageOS/android_device_nothing_Spacewar" remote="github" revision="lineage-23.2" />
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <remove-project name="LineageOS/android_packages_apps_SetupWizard" />
+  <remove-project name="LineageOS/android_lineage-sdk" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+  <remove-project name="LineageOS/android_packages_overlays_Lineage" />
+
+  <project path="frameworks/base" name="android_frameworks_base" remote="tessera" revision="16.0" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="tessera" revision="16.0" />
+  <project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="tessera" revision="16.0" />
+  <project path="lineage-sdk" name="android_lineage-sdk" remote="tessera" revision="16.0" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="tessera" revision="16.0" />
+  <project path="packages/overlays/Lineage" name="android_packages_overlays_Lineage" remote="tessera" revision="16.0" />
+
+  <project path="device/nothing/Spacewar" name="android_device_nothing_Spacewar" remote="tessera" revision="16.0" />
   <project path="vendor/nothing/Spacewar" name="proprietary_vendor_nothing_Spacewar" remote="themuppets" revision="lineage-23.2" />
   <project path="kernel/nothing/sm7325" name="LineageOS/android_kernel_nothing_sm7325" remote="github" revision="lineage-23.2" />
   <project path="hardware/nothing" name="LineageOS/android_hardware_nothing" remote="github" revision="lineage-23.2" />
